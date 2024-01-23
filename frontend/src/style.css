@@ -1,0 +1,45 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+h2 {
+  color: #ff6600; /* Orange color for headings */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #ff6600; /* Orange color for buttons */
+  color: #ffffff; /* White text on orange background */
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #cc5500; /* Darker orange on hover */
+}
+
+/* Edit mode styles */
+li.edit-mode {
+  background-color: #ffe6cc; /* Light orange background for edit mode */
+  padding: 10px;
+  border-radius: 5px;
+}

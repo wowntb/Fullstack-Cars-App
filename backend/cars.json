@@ -1,0 +1,5 @@
+[
+  { "id": 1, "make": "Mercedes-Benz", "model": "A-class", "seats": 5 },
+  { "id": 2, "make": "Land Rover", "model": "Defender 90", "seats": 6 },
+  { "make": "McLaren", "model": "P1", "seats": "2", "id": 3 }
+]
