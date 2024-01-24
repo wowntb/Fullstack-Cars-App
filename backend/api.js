@@ -6,17 +6,6 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const jsonFilePath = "cars.json";
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "cars-frontend/build")));
-  app.get("*", (req, res) => {
-    res.sendFile(
-      path.resolve(__dirname, "cars-frontend", "build", "index.html")
-    );
-  });
-}
-
-app.use(express.static(path.join(__dirname, "cars-frontend/build")));
-
 // Body-praser is middleware used to parse JSON.
 app.use(bodyParser.json());
 

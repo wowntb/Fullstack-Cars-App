@@ -5,17 +5,12 @@
   "main": "cars_api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cars-frontend && npm run build --prefix cars-frontend"
+    "start": "node api.js"
   },
   "author": "Nathenale Bedane",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
   },
-  "devDependencies": {},
-  "engines": {
-    "node": "20.11.0",
-    "npm": "10.2.4"
-  }
+  "devDependencies": {}
 }

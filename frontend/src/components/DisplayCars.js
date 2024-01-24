@@ -89,12 +89,6 @@ const DisplayCars = () => {
       .catch((error) => console.error("Error updating car:", error));
   };
 
-  const openCarURL = (url) => {
-    // This method is called when the user wants to open the image URL of a car in a new tab.
-    // It uses the window.open method to open the specified URL in a new browser tab.
-    window.open(url, "_blank");
-  };
-
   return (
     <div>
       <h2>Car List</h2>
@@ -158,8 +152,13 @@ const DisplayCars = () => {
                 {car.make} {car.model} ({car.seats} seats)&nbsp;
                 <button onClick={() => deleteCar(car.id)}>Delete</button>&nbsp;
                 <button onClick={() => startEditMode(car.id)}>Edit</button>
-                &nbsp;
-                <button onClick={() => openCarURL(car.URL)}>Open Image</button>
+                <br />
+                {/* Display the image directly on the page using the img tag. */}
+                <img
+                  src={car.URL}
+                  alt={car.make + car.model}
+                  style={{ maxWidth: "200px", maxHeight: "200px" }}
+                />
               </div>
             )}
           </li>
