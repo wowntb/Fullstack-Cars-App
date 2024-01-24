@@ -5,7 +5,8 @@
   "main": "cars_api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api.js"
+    "start": "node api.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cars-frontend && npm run build --prefix cars-frontend"
   },
   "author": "Nathenale Bedane",
   "license": "ISC",
