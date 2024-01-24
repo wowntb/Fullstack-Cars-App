@@ -1,3 +1,1 @@
 GitHub repo link: https://github.com/wowntb/L4T28-Fullstack-Cars-App.
-
-Heroku deployment ink: .
