@@ -155,9 +155,9 @@ const DisplayCars = () => {
                 <br />
                 {/* Display the image directly on the page using the img tag. */}
                 <img
+                  className="car-image"
                   src={car.URL}
                   alt={car.make + car.model}
-                  style={{ maxWidth: "200px", maxHeight: "200px" }}
                 />
               </div>
             )}
