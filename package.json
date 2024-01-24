@@ -4,7 +4,7 @@
   "description": "My first web app built using both Express and React to create a full stack application. This app displays a list of cars from a backend server and allows the user on the frontend to perform CRUD operations on the cars.",
   "main": "index.js",
   "scripts": {
-    "start": "cd frontend && npm install && npm run build && cd ../backend && npm install && npm start",
+    "start": "cd frontend && npm install && npm run build && cd /backend && npm install && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nathenale Bedane",
