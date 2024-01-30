@@ -2,12 +2,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require("fs");
+const helmet = require("helmet");
 const app = express();
 const PORT = process.env.PORT || 8000;
 const jsonFilePath = "cars.json";
 
-// Body-praser is middleware used to parse JSON.
+// Body-parser is middleware used to parse JSON.
 app.use(bodyParser.json());
+// Using Helmet middleware for enhanced security.
+app.use(helmet());
 
 // An empty array of cars is initialised.
 let cars = [];
